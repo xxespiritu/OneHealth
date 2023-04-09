@@ -1,3 +1,7 @@
+/****************************************************************
+*   home-routes.js                                              *
+*   Specify new views here.                                     *
+*****************************************************************/
 const express = require('express');
 
 const {indexView, tableView, billingView, virtualView, profileView, signinView, signupView} = require('../controllers/homeController');

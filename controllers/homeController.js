@@ -1,4 +1,8 @@
-
+/****************************************************************
+*   homeController.js                                           *
+*   You can add new "views" here. Following the following format*
+*   you must also add this new view to home-routes.js           *
+*****************************************************************/
 const indexView = (req, res) => {
     res.render('home');
 }
