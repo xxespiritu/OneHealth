@@ -38,7 +38,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
-        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">One Health</span>
       </a>
     </div>
@@ -54,35 +54,36 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="/table">
+          <a class="nav-link " href="/staff">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Tables</span>
+            <span class="nav-link-text ms-1">Staff</span>
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link " href="/patients">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-collection text-danger text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Patients</span>
+          </a>
+        </li>
+        <!--<li class="nav-item">
           <a class="nav-link " href="/billing">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Billing</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li>-->
+        <!--Unused page to be repurposed-->        
+        <!--<li class="nav-item">
           <a class="nav-link " href="/virtual-reality">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-info text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Virtual Reality</span>
-          </a>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link " href="../pages/rtl.html">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">RTL</span>
           </a>
         </li>-->
         <li class="nav-item mt-3">
@@ -99,7 +100,7 @@
         <li class="nav-item">
           <a class="nav-link " href="/sign-in">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-warning text-sm opacity-10"></i>
+              <i class="ni ni-key-25 text-warning text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Sign In</span>
           </a>
@@ -107,7 +108,7 @@
         <li class="nav-item">
           <a class="nav-link " href="/sign-up">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-collection text-info text-sm opacity-10"></i>
+              <i class="ni ni-single-copy-04 text-info text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Sign Up</span>
           </a>
@@ -134,6 +135,7 @@
             </div>
           </div>
           <ul class="navbar-nav  justify-content-end">
+            <!--Sign In Button-->
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
@@ -149,11 +151,13 @@
                 </div>
               </a>
             </li>
+            <!--Settings Gear Button-->
             <li class="nav-item px-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white p-0">
                 <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
               </a>
             </li>
+            <!--Notification Button-->
             <li class="nav-item dropdown pe-2 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-bell cursor-pointer"></i>
@@ -167,7 +171,7 @@
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
-                          <span class="font-weight-bold">New message</span> from Laur
+                          <span class="font-weight-bold">New message</span> from John
                         </h6>
                         <p class="text-xs text-secondary mb-0">
                           <i class="fa fa-clock me-1"></i>
