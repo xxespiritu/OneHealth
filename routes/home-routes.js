@@ -4,16 +4,17 @@
 *****************************************************************/
 const express = require('express');
 
-const {indexView, tableView, billingView, virtualView, profileView, signinView, signupView} = require('../controllers/homeController');
+const {indexView, staffView, billingView, patientsView, profileView, signinView, signupView, patient1View} = require('../controllers/homeController');
 const router = express.Router();
 
 router.get('/', indexView);
-router.get('/table', tableView);
+router.get('/staff', staffView);
 router.get('/billing', billingView);
-router.get('/virtual-reality', virtualView);
+router.get('/patients', patientsView);
 router.get('/profile', profileView);
 router.get('/sign-in', signinView);
 router.get('/sign-up', signupView);
+router.get('/patient1', patient1View);
 
 
 module.exports = {

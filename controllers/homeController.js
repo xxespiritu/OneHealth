@@ -7,16 +7,16 @@ const indexView = (req, res) => {
     res.render('home');
 }
 
-const tableView = (req, res) => {
-    res.render('table');
+const staffView = (req, res) => {
+    res.render('staff');
 }
 
 const billingView = (req, res) => {
     res.render('billing');
 }
 
-const virtualView = (req, res) => {
-    res.render('virtual-reality')
+const patientsView = (req, res) => {
+    res.render('patients')
 }
 
 const profileView = (req, res) => {
@@ -31,12 +31,17 @@ const signupView = (req, res) => {
     res.render('sign-up');
 }
 
+const patient1View = (req, res) => {
+    res.render('patient1');
+}
+
 module.exports = {
     indexView,
-    tableView,
+    staffView,
     billingView,
-    virtualView,
+    patientsView,
     profileView,
     signinView,
-    signupView
+    signupView,
+    patient1View
 }
