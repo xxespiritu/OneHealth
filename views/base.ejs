@@ -1,0 +1,39 @@
+<!-- includes header.ejs -->
+<%- include('header')-%>
+
+<!-- log in box in main page -->
+ <div class="text-center center-div" id="login">
+    <div class="container border py-5" style="background-color: ghostwhite;">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">Log In</h2>
+        </div>
+        <form action="loggedIn">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="email" name="email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="password">
+            </div>
+            <!-- links reset password page to forgot password in log in container [PAGE NOT CREATED, EMPTY LINK]-->
+            <form action="forgotPassword">
+                <small class="form-text text-muted text-left"> <a href="/resetPassword"><u>Forgot Password?</u></a></small>
+            </form>
+            <br>
+            <!-- should link log in submit button to one health website [NOT LINKED YET] -->
+            <!-- Linking examples ->> https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/ -->
+            <form action="loggedIn">
+                <!-- <a href="dashboard.html" -->
+                <button type="submit" class="submitButton btn-block">Submit</button>
+                <!-- </a> -->
+            </form>
+        </form>
+        <!-- links register.ejs to "New to One Health? Sign Up" -->
+        <form action="registration">
+            <br>
+            <p> New to One Health? <a href="/register"><u>Sign Up</u></a></p>
+        </form>
+    </div>
+</div>
+
+<!-- includes footer.ejs -->
+<%- include('footer')-%>

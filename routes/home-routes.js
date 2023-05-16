@@ -4,10 +4,12 @@
 *****************************************************************/
 const express = require('express');
 
-const {indexView, staffView, billingView, patientsView, profileView, signinView, signupView, patient1View} = require('../controllers/homeController');
+const {homeScreen, register, indexView, staffView, billingView, patientsView, profileView, signinView, signupView, patient1View/*, homeScreen*/} = require('../controllers/homeController');
 const router = express.Router();
 
-router.get('/', indexView);
+router.get('/', homeScreen);
+router.get('/register', register);
+router.get('/home', indexView);
 router.get('/staff', staffView);
 router.get('/billing', billingView);
 router.get('/patients', patientsView);
