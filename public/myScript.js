@@ -13,3 +13,4 @@ function PatientPercentage(){
     //Output a dummy percentage.
     document.write(Math.floor(Math.random()*100));
 }
+
