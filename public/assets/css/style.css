@@ -1,0 +1,82 @@
+/* css style sheet for the main log in page */
+/* originally placed in public folder */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+body{
+    font-family: 'Noto Serif', serif;
+    background: url(/assets/img/vivid-blurred.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+hr.line {
+    border-top: 1px solid white;
+    margin-top: 200px;
+  }
+
+
+/* log in container text */  
+form{
+    padding: 0 3em;
+}
+
+/* log in container */
+
+.container{
+    position: relative;
+    height: fit-content;
+    margin-top: 100px;
+    margin: 10 auto;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.submitButton{
+    padding: .4em 2em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+    background: #4C71F9;
+    border: none;
+    color: white;
+}
+
+/* One Health header */
+
+.header{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 700px;
+    font-family: 'DM Serif Text', serif;
+    font-weight: bold;
+    color:#FDF9F8;
+}
+
+/* Bottom wave of log in page*/
+
+.custom-shape-divider-bottom-1682483037 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1682483037 svg {
+    position: relative;
+    display: block;
+    width: calc(176% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1682483037 .shape-fill {
+    fill: #3C81F06E;
+}

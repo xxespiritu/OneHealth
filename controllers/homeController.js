@@ -3,6 +3,14 @@
 *   You can add new "views" here. Following the following format*
 *   you must also add this new view to home-routes.js           *
 *****************************************************************/
+const homeScreen = (req, res) => {
+    res.render('log-in', {layout: 'log-in'});
+}
+
+const register = (req, res) => {
+    res.render('register', {layout: 'register'});
+}
+
 const indexView = (req, res) => {
     res.render('home');
 }
@@ -36,6 +44,8 @@ const patient1View = (req, res) => {
 }
 
 module.exports = {
+    homeScreen,
+    register,
     indexView,
     staffView,
     billingView,

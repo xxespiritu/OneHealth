@@ -1,0 +1,77 @@
+/* css style sheet for the register page */
+/* originally placed in public folder */
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background: url(/assets/img/vivid-blurred.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.container{
+    max-width: 600px;
+    height: fit-content;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    position: absolute;
+    background: #fff;
+    text-align: left;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+form .user-info .info{
+    margin: 20px 0 12px 0;
+}
+
+.user-info .info .infoTitle{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.user-info .info input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #4C71F9;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 18px;
+    font-weight: 500;
+}
