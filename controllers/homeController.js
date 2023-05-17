@@ -3,6 +3,7 @@
 *   You can add new "views" here. Following the following format*
 *   you must also add this new view to home-routes.js           *
 *****************************************************************/
+<<<<<<< Updated upstream
 const homeScreen = (req, res) => {
     res.render('log-in', {layout: 'log-in'});
 }
@@ -12,8 +13,35 @@ const register = (req, res) => {
 }
 
 const indexView = (req, res) => {
+=======
+
+const index = (req, res, next) => {
+    res.render('home', {
+        title: 'Auth0 Webapp Sample Nodejs',
+        isAuthenticated: req.oidc.isAuthenticated()
+    });
+};
+
+const loginView = (req, res, next) => {
+    res.oidc.login({
+        returnTo: '/home',
+        authorizationParams: {
+            redirect_uri: 'http://localhost:3000/callback',
+        },
+    })
+};
+
+const profile = (req, res, next) => {
+    res.render('profile', {
+        userProfile: JSON.stringify(req.oidc.user, null, 2),
+        title: 'Profile Page'
+    });
+};
+
+/*const indexView = (req, res) => {
+>>>>>>> Stashed changes
     res.render('home');
-}
+}*/
 
 const staffView = (req, res) => {
     res.render('staff');
@@ -31,12 +59,8 @@ const profileView = (req, res) => {
     res.render('profile');
 }
 
-const signinView = (req, res) => {
-    res.render('sign-in');
-}
-
-const signupView = (req, res) => {
-    res.render('sign-up');
+const profileView1 = (req, res) => {
+    res.render('editprofile');
 }
 
 const patient1View = (req, res) => {
@@ -44,14 +68,20 @@ const patient1View = (req, res) => {
 }
 
 module.exports = {
+<<<<<<< Updated upstream
     homeScreen,
     register,
     indexView,
+=======
+    index,
+    loginView,
+    profile,
+    //indexView,
+>>>>>>> Stashed changes
     staffView,
     billingView,
     patientsView,
     profileView,
-    signinView,
-    signupView,
+    profileView1,
     patient1View
 }
