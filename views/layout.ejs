@@ -27,7 +27,7 @@
     <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="/assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
-    <script src="../myScript.js"></script>
+    <script type="application/javascript" src="/myScript.js"></script>
 </head>
 <body class="g-sidenav-show   bg-gray-100">
   <div class="min-height-300 bg-primary position-absolute w-100"></div>
@@ -94,22 +94,6 @@
             <span class="nav-link-text ms-1">Profile</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/sign-in">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-key-25 text-warning text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign In</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="/sign-up">
-            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="ni ni-single-copy-04 text-info text-sm opacity-10"></i>
-            </div>
-            <span class="nav-link-text ms-1">Sign Up</span>
-          </a>
-        </li>
       </ul>
     </div>
   </aside>
@@ -134,7 +118,11 @@
           <ul class="navbar-nav  justify-content-end">
             <!--Sign In Button-->
             <li class="nav-item d-flex align-items-center">
+<<<<<<< Updated upstream
               <a href="/" class="nav-link text-white font-weight-bold px-0">
+=======
+              <a href="/logout" class="nav-link text-white font-weight-bold px-0">
+>>>>>>> Stashed changes
                 <i class="fa fa-user me-sm-1"></i>
                 <span class="d-sm-inline d-none">Sign Out</span>
               </a>
@@ -160,7 +148,7 @@
                 <i class="fa fa-bell cursor-pointer"></i>
               </a>
               <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
-                <li class="mb-2">
+                <!--<li class="mb-2">
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
@@ -225,7 +213,7 @@
                       </div>
                     </div>
                   </a>
-                </li>
+                </li>-->
               </ul>
             </li>
           </ul>
@@ -346,7 +334,7 @@
     <script src="/assets/js/plugins/perfect-scrollbar.min.js"></script>
     <script src="/assets/js/plugins/smooth-scrollbar.min.js"></script>
     <script src="/assets/js/plugins/chartjs.min.js"></script>
-    <script>
+    <!--<script>
       var ctx1 = document.getElementById("chart-line").getContext("2d");
   
       var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
@@ -428,7 +416,7 @@
           },
         },
       });
-    </script>
+    </script>-->
     <script>
       var win = navigator.platform.indexOf('Win') > -1;
       if (win && document.querySelector('#sidenav-scrollbar')) {
