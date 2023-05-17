@@ -9,7 +9,7 @@ const config = {
   authRequired: false,
   auth0Logout: true,
   secret: 'a long, randomly-generated string stored in env',
-  baseURL: 'ec2-52-53-164-115.us-west-1.compute.amazonaws.com',
+  baseURL: 'http://localhost:3000',
   clientID: 'hK2DZR5Wd6Hc3TyFelJEAdxH53CMoTkO',
   issuerBaseURL: 'https://dev-kgl22ommg21jze83.us.auth0.com'
 }
